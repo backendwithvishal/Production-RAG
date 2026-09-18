@@ -12,9 +12,10 @@ numpy                       # Numerical processing
 pytz                        # Timezone handling for logs
 nest-asyncio                # Support for nested async loops in notebooks/streamlit
 
-# --- GEMINI EMBEDDINGS ---
-google-generativeai         # Gemini API — embeddings (text-embedding-004 / gemini-embedding-001)
-langchain-google-genai      # LangChain integration for Gemini models
+# --- HUGGING FACE EMBEDDINGS ---
+huggingface-hub
+langchain-huggingface
+sentence-transformers
 
 # --- VECTOR DB & RETRIEVAL ---
 qdrant-client               # Vector Database for semantic search
