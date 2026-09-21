@@ -8,3 +8,15 @@ This module handles:
 """
 
 # Placeholder for embedding model initialization and vector search functions
+
+import time
+import logfire
+from langchain_huggingface import HuggingFaceEmbeddings
+from app.config import settings
+
+HUGGINGFACE_MODEL = settings.huggingface_model 
+
+BATCH_SIZE = 100
+_HUGGINGFACE_DIMENSIONS = 3072
+_FALLBACK_DIMENSIONS = 560
+
