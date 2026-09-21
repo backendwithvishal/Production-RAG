@@ -20,3 +20,30 @@ BATCH_SIZE = 100
 _HUGGINGFACE_DIMENSIONS = 3072
 _FALLBACK_DIMENSIONS = 560
 
+_active_model = None
+_model_type: str | None = None # "huggingface" or "fallback"
+
+def _probe_huggingface():
+    """Try one embed call to verify Gemini is reachable. Returns model or None."""
+
+def _load_fallback():
+    """Loads the fallback model from disk. Returns (model, dimension)."""
+    return
+
+def _init():
+    return 
+
+def get_embedding_din() -> int:
+    """Return the vector dimension for the active model. Call after _init()."""
+    return
+
+def _embed_batch(batch: list[str]) -> list[list[float]]:
+    """Return the vector dimension for the active model. Call after _init()."""
+    return
+
+def _embed_query(query: str) -> list[list[float]]:
+    return 
+
+def load_embeddings():
+    """Load the embedding model (huggingface or fallback) ad make it available as _active_model."""
+    return
