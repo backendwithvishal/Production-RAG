@@ -9,7 +9,6 @@ It first attempts to extract text quickly using 'pypdf'. If any pages are blank
 import logfire
 from pypdf import PdfReader
 
-
 def parse_pdf(file_path: str) -> str:
     """
     Extract readable text from a PDF file.
