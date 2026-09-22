@@ -195,4 +195,3 @@ def embed_texts(texts: list[str]) -> list[list[float]]:
 
     # Return embeddings for all input texts.
     return all_embeddings
-    
